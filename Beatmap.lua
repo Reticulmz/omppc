@@ -5,6 +5,7 @@ Beatmap.parse = function(self, filePath)
     self.noteData = {}
 
     local blockName = ""
+    print(filePath)
     for line in file:lines() do
         if line:sub(1,1) == "[" then
             blockName = line:trim():sub(2, -2)
