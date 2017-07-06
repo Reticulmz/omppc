@@ -16,7 +16,7 @@ _lua__set_play_data = lua.eval("""
 function(beatmap, score, mods, accuracy)
 	score = score or 1000000
 	mods = mods or 0
-	accuracy = accuracy or 100
+	accuracy = accuracy or 1
 
 	playData = PlayData:new()
 	playData.mods = Mods:new():parse(mods)
