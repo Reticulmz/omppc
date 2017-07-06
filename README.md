@@ -5,7 +5,7 @@ This is used in [LETS](https://github.com/osuripple/lets) as mania pp calculator
 
 ## Requirements
 - lua 5.2 (required by lupa)
-- lua 5.3 dev (required by lupa)
+- lua 5.2 dev (required by lupa)
 - lupa
 
 ## Usage
