@@ -4,12 +4,12 @@ from lupa import LuaRuntime
 lua = LuaRuntime()
 
 # Import all needed lua packages
-lua.require("omppc.tweaks.tweaks")
-lua.require("omppc.Mods")
-lua.require("omppc.Note")
-lua.require("omppc.Beatmap")
-lua.require("omppc.PerformanceCalculator")
-lua.require("omppc.PlayData")
+lua.require("{}.tweaks.tweaks".format(__name__))
+lua.require("{}.Mods".format(__name__))
+lua.require("{}.Note".format(__name__))
+lua.require("{}.Beatmap".format(__name__))
+lua.require("{}.PerformanceCalculator".format(__name__))
+lua.require("{}.PlayData".format(__name__))
 
 # Lua function wrappers
 _lua__set_play_data = lua.eval("""
