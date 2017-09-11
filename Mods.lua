@@ -31,7 +31,6 @@ Mods.parse = function(self, modsFlags)
 
 	-- DT
 	if bit32.band(modsFlags, 64) > 0 then
-		print("peepee")
 		self.DoubleTime = true
 		self.timeRate = 3/2
 	end
